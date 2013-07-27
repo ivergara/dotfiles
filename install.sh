@@ -7,3 +7,5 @@ cp .zshrc $HOME
 chsh -s /bin/zsh
 
 cp .vimrc $HOME/
+cp vim/ftplugin/* $HOME/.vim/ftplugin
+vim +BuncleInstall +qall # Installing vim plugins
