@@ -190,7 +190,6 @@ set wrap "Wrap lines
 
 " Formatting
 
-set nowrap                      " Wrap long lines
 set autoindent                  " Indent at the same level of the previous line
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
@@ -381,6 +380,9 @@ au BufNewFile,BufRead *.json set ft=javascript
 " Set the Ruby filetype for a number of common Ruby files without .rb
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby
 
+" Set markdown specifics
+au BufRead,BufNewFile *.md set filetype=markdown
+
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -389,3 +391,8 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType cpp set omnifunc=ccomplete#Complete
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
