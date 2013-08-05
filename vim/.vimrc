@@ -245,6 +245,10 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 map j gj
 map k gk
 
+" move on soft lines in insert mode
+inoremap <Down> <C-o>g<Down>
+inoremap <Up> <C-o>g<Up>
+
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
