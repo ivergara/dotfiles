@@ -16,3 +16,6 @@ vim +BuncleInstall +qall # Installing vim plugins
 # GIT section
 mv ./git/gitignore_globals $HOME/.gitignore_globals
 git config --global core.excludesfile ~/.gitignore_global
+git config --global core.editor "vim"
+git config --global user.name "Ignacio Vergara Kausel"
+git config --global user.email "ivergarakausel@gmail.com"
