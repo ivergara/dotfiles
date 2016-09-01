@@ -14,15 +14,13 @@ git config --global core.editor "vim"
 git config --global user.name "Ignacio Vergara Kausel"
 git config --global user.email "ivergarakausel@gmail.com"
 
-# zsh and oh-my-zsh stuff
+# zsh
 sudo apt-get install zsh
 
 
-# Making zsh the default shell
+# Installing oh-my-zsh
 
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-ln -s zsh/.zshrc  ~/.zshrc
-chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Vim
 sudo apt-get install vim
